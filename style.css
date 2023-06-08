@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFC93C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    /* background-color: #DBF6E9; */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 5rem;
+    font-family: 'Orbitron', sans-serif;
+    /* letter-spacing: 1rem; */
+    /* border: 1px saddlebrown solid; */
+}
+.clock span{
+    font-size: 3rem;
+}
+.day{
+    font-family: 'Poppins', sans-serif;
+}
+.day p{
+    text-align: center;
+    font-size: 3rem;
+}
+.day p span{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    position: relative;
+    animation: move 5s infinite;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+
+@keyframes move {
+  from {left: 0px;}
+  to {left: 100px;}
+}
